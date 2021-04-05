@@ -2,10 +2,7 @@
 
 namespace app\controllers;
 
-<<<<<<< HEAD
-=======
 use app\models\EntryForm;
->>>>>>> 42aafefdcd1feda966a0dc4c7bb429c7e09f13e2
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -129,8 +126,6 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-<<<<<<< HEAD
-=======
 
     public function actionSay($message="Привет")
     {
@@ -146,5 +141,4 @@ class SiteController extends Controller
             return $this->render('entry', ['model' => $model]);
         }
     }
->>>>>>> 42aafefdcd1feda966a0dc4c7bb429c7e09f13e2
 }
