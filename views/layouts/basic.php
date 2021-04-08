@@ -20,7 +20,7 @@ AppAsset::register($this);
             <div class="container">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page"><?= Html::a("Главная", '/web/') ?></a>
+                        <a class="nav-link" aria-current="page"><?= Html::a("Главная", '/') ?></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><?= Html::a("Статьи", ['post/index']) ?></a>

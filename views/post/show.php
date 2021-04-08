@@ -1,8 +1,18 @@
+<?php
+use app\components\NewWidget;
+?>
+
 <?php $this->beginBlock('block1'); ?>
     <h1>Header of page</h1>
 <?php $this->endBlock(); ?>
 
 <h1>Show Action</h1>
+
+<?php //echo NewWidget::widget(['name' => 'Natalie']); ?>
+
+<?php NewWidget::begin() ?>
+    <h1>new widget by dezrill</h1>
+<?php NewWidget::end() ?>
 
 <button class="btn btn-success" id="btn">Click me...</button><br/>
 
@@ -10,7 +20,7 @@
     //echo $cat['title'] . '<br>';
 //} ?>
 
-<?php foreach ($cats as $cat) {
+<?php /*foreach ($cats as $cat) {
     echo '<ul>';
         echo '<li>' . $cat->title . '</li>';
         $products=$cat->products;
@@ -20,11 +30,11 @@
             echo '</ul>';
         }
     echo '</ul>';
-} ?>
+}*/ ?>
 
-<?php debug($cats) ?>
-<?php echo count($cats[0]->products)?>
-<?php debug($cats) ?>
+<?php //debug($cats) ?>
+<?php //echo count($cats[0]->products)?>
+<?php //debug($cats) ?>
 
 <?php //$this->registerJsFile('@web/js/scripts.js', ['depends' => 'yii\web\YiiAsset']) ?>
 <?php //$this->registerJs("$('.container').append('<p>SHOW!!!</p>')", \yii\web\View::POS_LOAD) ?>
